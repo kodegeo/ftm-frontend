@@ -19,10 +19,10 @@ export function MyCommunity() {
       <CommunityHero onScrollToEvents={scrollToEvents} />
       <FeatureCards />
       <div ref={eventsRef}>
-        <EventsSection />
+      <EventsSection />
       </div>
       <FeedbackSection />
-      <ProgressUpdates />
+      {/* <ProgressUpdates /> */}
       <HealthInitiatives />
       <NewsletterStrip />
     </div>

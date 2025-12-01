@@ -10,7 +10,7 @@ export function CommunityHero({ onScrollToEvents }: CommunityHeroProps) {
       className="relative w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url('/images/community-hero-placeholder.jpg')",
+          "url('/banners/banner4.jpg')",
       }}
     >
       <div className="absolute inset-0 bg-black/40" />
@@ -21,14 +21,14 @@ export function CommunityHero({ onScrollToEvents }: CommunityHeroProps) {
             className="text-3xl md:text-4xl lg:text-5xl font-cooper mb-4 leading-tight"
             style={{ color: "#afe899" }}
           >
-            Welcome to the Family Tree Community
+            Welcome to the Family Tree Food Market Community Experience
           </h1>
           <p
             className="text-base md:text-lg mb-8 max-w-xl"
             style={{ fontFamily: "Arial, sans-serif" }}
           >
-            Where neighbors, food, and culture come together in the Hill
-            District.
+            Hill District, this space is for you.
+            The Family Tree Food Market Community is where voices, ideas, and culture shape a healthier future together.
           </p>
 
           <div className="flex flex-wrap gap-4">
