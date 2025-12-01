@@ -10,6 +10,7 @@ export function Store() {
       <HeroSection
         title="Store"
         subtitle="Browse our curated selection of products"
+        image="/images/store.png"
       />
 
       <div className="mb-8">

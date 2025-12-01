@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { getVisibleNavigationItems, VisibilityContext } from "../../lib/navigation-rules"
+import { getVisibleNavigationItems } from "../../lib/navigation-rules"
+import type { VisibilityContext } from "../../lib/navigation-rules"
 import { cn } from "../../lib/utils"
 import { Menu, X } from "lucide-react"
 import { Button } from "../ui/button"
@@ -24,6 +25,7 @@ export function MobileNavigation({ context, className }: MobileNavigationProps) 
       >
         {isOpen ? <X /> : <Menu />}
       </Button>
+
       {isOpen && (
         <div className="absolute top-full left-0 right-0 bg-background border-b shadow-lg z-50">
           <nav className="flex flex-col p-4">

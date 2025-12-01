@@ -12,6 +12,7 @@ export function MealPlanning() {
       <HeroSection
         title="Meal Planning"
         subtitle="Plan your meals with recipes and grocery integration"
+        image="/images/meal-planning.png"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">

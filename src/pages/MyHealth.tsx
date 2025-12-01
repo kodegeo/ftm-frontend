@@ -11,6 +11,7 @@ export function MyHealth() {
       <HeroSection
         title="MyHealth"
         subtitle="Ingredient intelligence and health insights for every product"
+        image="/images/myhealth.png"
       />
 
       <SectionHeader

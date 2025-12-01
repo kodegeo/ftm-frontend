@@ -11,6 +11,7 @@ export function NutritionServices() {
       <HeroSection
         title="Nutrition Services"
         subtitle="Connect with dietitians and get personalized nutrition guidance"
+        image="/images/nutrition-services.jpg"
       />
 
       <SectionHeader

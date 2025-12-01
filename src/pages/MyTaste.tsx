@@ -11,6 +11,7 @@ export function MyTaste() {
       <HeroSection
         title="MyTaste"
         subtitle="Discover your taste preferences and find products that match your palate"
+        image="/images/mytaste.png"
       />
 
       <SectionHeader

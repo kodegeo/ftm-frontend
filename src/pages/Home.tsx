@@ -19,11 +19,11 @@ export function Home() {
 
   return (
     <div>
-      <HeroSection
-        tagline="OFFERS FRESH AND HEALTHY FOODS"
-        description="Fresh food, healthy choices, and a market designed for our community. At Family Tree, eating better should be easy — and we're here to make it possible for every family in the Hill District."
+        <HeroSection
+        title="OFFERS FRESH AND HEALTHY FOODS"
+        subtitle="Fresh food, healthy choices, and a market designed for our community..."
         image={HERO_IMAGE}
-      >
+        >
         <div className="flex flex-wrap gap-4">
           <Button
             asChild
