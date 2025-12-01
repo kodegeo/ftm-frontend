@@ -126,25 +126,47 @@ export function Home() {
       <ServicesSection />
 
       {/* Seller Onboarding Section */}
-      <section className="bg-[#E8F5E9] py-12 px-4">
+      <section 
+        className="py-16 px-4 relative overflow-hidden"
+        style={{
+          backgroundColor: "#E8F5E9",
+          backgroundImage: "url('/banners/background-light-green-print.png')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "auto",
+        }}
+      >
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex-1">
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-green mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
-                OPEN YOUR STORE ON FAMILY TREE & REACH MILLIONS OF BUYERS ALL OVER THE WORLD
+            <div className="flex-1 max-w-2xl bg-white/95 rounded-2xl p-8 shadow-lg">
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-green mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
+                Open Your Store on Family Tree
               </h2>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-4xl">📱</span>
-              </div>
+              <p className="text-lg text-gray-700 mb-6" style={{ fontFamily: 'Arial, sans-serif' }}>
+              Sell Your Products Locally — Connect With Families Right Here in the Hill District.
+              </p>
               <Button
                 asChild
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-base font-semibold"
-                style={{ fontFamily: 'Arial, sans-serif' }}
+                className="px-8 py-6 text-base font-semibold"
+                style={{ 
+                  backgroundColor: '#f09440',
+                  color: 'white',
+                  fontFamily: 'Arial, sans-serif',
+                  border: 'none'
+                }}
               >
-                <Link to="https://9atnn8n9kak.typeform.com/to/PWXtQFTI">Interested in Becoming a Local Seller</Link>
+                <a 
+                  href="https://9atnn8n9kak.typeform.com/to/PWXtQFTI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Interested in Becoming a Local Seller
+                </a>
               </Button>
+            </div>
+            <div className="flex-shrink-0">
+              <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-6xl">📱</span>
+              </div>
             </div>
           </div>
         </div>
