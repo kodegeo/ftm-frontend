@@ -1,6 +1,5 @@
 import { HeroSection } from "../components/HeroSection"
 import { SectionHeader } from "../components/SectionHeader"
-import { CardGrid } from "../components/CardGrid"
 import { IngredientBreakdown } from "../components/myhealth/IngredientBreakdown"
 import { HealthRiskBadge } from "../components/myhealth/HealthRiskBadge"
 import { ConditionTag } from "../components/myhealth/ConditionTag"
