@@ -1,0 +1,71 @@
+{
+  "navigation": [
+    {
+      "id": "storeNav",
+      "label": "Store",
+      "path": "/store",
+      "visible": true,
+      "stores": ["global", "hill-district", "montbello"],
+      "requiresAuth": false,
+      "featureFlag": null,
+      "releaseDate": null,
+      "roles": ["public", "customer", "admin", "dietitian"]
+    },
+    {
+      "id": "myTasteNav",
+      "label": "MyTaste",
+      "path": "/my-taste",
+      "visible": true,
+      "stores": ["global", "hill-district", "montbello"],
+      "requiresAuth": false,
+      "featureFlag": "tasteIntelligenceEnabled",
+      "releaseDate": null,
+      "roles": ["public", "customer", "admin", "dietitian"]
+    },
+    {
+      "id": "myHealthNav",
+      "label": "MyHealth",
+      "path": "/my-health",
+      "visible": true,
+      "stores": ["global", "hill-district", "montbello"],
+      "requiresAuth": false,
+      "featureFlag": "healthIntelligenceEnabled",
+      "releaseDate": null,
+      "roles": ["public", "customer", "admin", "dietitian"]
+    },
+    {
+      "id": "mealPlanningNav",
+      "label": "Meal Planning",
+      "path": "/meal-planning",
+      "visible": true,
+      "stores": ["global", "hill-district", "montbello"],
+      "requiresAuth": false,
+      "featureFlag": "mealPlanningEnabled",
+      "releaseDate": "2025-02-01",
+      "roles": ["public", "customer", "admin", "dietitian"]
+    },
+    {
+      "id": "nutritionServicesNav",
+      "label": "Nutrition Services",
+      "path": "/nutrition-services",
+      "visible": true,
+      "stores": ["global", "hill-district"],
+      "requiresAuth": false,
+      "featureFlag": "nutritionServicesEnabled",
+      "releaseDate": null,
+      "roles": ["public", "customer", "admin", "dietitian"]
+    },
+    {
+      "id": "myCommunityNav",
+      "label": "MyCommunity",
+      "path": "/my-community",
+      "visible": true,
+      "stores": ["global", "hill-district", "montbello"],
+      "requiresAuth": false,
+      "featureFlag": null,
+      "releaseDate": null,
+      "roles": ["public", "customer", "admin", "dietitian"]
+    }
+  ]
+}
+

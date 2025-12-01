@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-cooper {
+    font-family: 'Cooper Black', serif;
+  }
+}
