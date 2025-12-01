@@ -143,7 +143,7 @@ export function Home() {
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-base font-semibold"
                 style={{ fontFamily: 'Arial, sans-serif' }}
               >
-                <Link to="/my-community">Start Selling On Family Tree Today</Link>
+                <Link to="https://9atnn8n9kak.typeform.com/to/PWXtQFTI">Interested in Becoming a Local Seller</Link>
               </Button>
             </div>
           </div>
