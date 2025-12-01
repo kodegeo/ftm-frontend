@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { HeroSection } from "../components/HeroSection"
-import { Link } from "react-router-dom"
 import { Button } from "../components/ui/button"
 import { StoreFilterBar } from "../components/home/StoreFilterBar"
 import { FeatureStrip } from "../components/home/FeatureStrip"
@@ -16,6 +15,7 @@ const HERO_IMAGE = "/banners/hero-main.jpg"
 
 export function Home() {
   const [isGetARideModalOpen, setIsGetARideModalOpen] = useState(false)
+  const [isOrderNowModalOpen, setIsOrderNowModalOpen] = useState(false)
 
   return (
     <div>
@@ -26,8 +26,8 @@ export function Home() {
         >
         <div className="flex flex-wrap gap-4">
           <Button
-            asChild
             className="px-8 py-6 text-base font-semibold"
+            onClick={() => setIsOrderNowModalOpen(true)}
             style={{ 
               backgroundColor: '#f09440',
               color: 'white',
@@ -35,7 +35,7 @@ export function Home() {
               border: 'none'
             }}
           >
-            <Link to="/store/hill-district">Shop Now</Link>
+            Shop Now
           </Button>
           <Button
             asChild
@@ -108,6 +108,18 @@ export function Home() {
           </Button>
         </div>
       </section>
+
+      {/* Order Now Modal for hero Shop Now button */}
+      <Modal
+        open={isOrderNowModalOpen}
+        onOpenChange={setIsOrderNowModalOpen}
+        title="Online Ordering Coming Soon!"
+        image="/images/order-now.png"
+      >
+        <p style={{ fontFamily: 'Arial, sans-serif' }}>
+          You'll be able to order fresh groceries for pickup or delivery once the store opens. Join our community list to get notified when online ordering launches.
+        </p>
+      </Modal>
 
       {/* Get a Ride Modal for non-hero \"Shop Now\" buttons */}
       <Modal
