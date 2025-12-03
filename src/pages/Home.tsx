@@ -49,7 +49,7 @@ export function Home() {
             }}
           >
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfakcuPuXv_OX6gmHOV0vH5JJrcHUayHUPHkAFZVnCQ-UzuJA/viewform"
+              href="https://form.jotform.com/250625568738165"
               target="_blank"
               rel="noopener noreferrer"
             >
