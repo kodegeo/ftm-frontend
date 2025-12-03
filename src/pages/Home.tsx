@@ -151,10 +151,10 @@ export function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex-1 max-w-2xl bg-white/95 rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-green mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
-                Open Your Store on Family Tree
+                Launch Your Food Business at Family Tree Food Market
               </h2>
               <p className="text-lg text-gray-700 mb-6" style={{ fontFamily: 'Arial, sans-serif' }}>
-              Sell Your Products Locally — Connect With Families Right Here in the Hill District.
+              Sell Your Products Locally<br />Connect With Families Right Here in the Hill District.
               </p>
               <Button
                 asChild

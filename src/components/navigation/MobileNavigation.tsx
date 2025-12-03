@@ -27,18 +27,26 @@ export function MobileNavigation({ context, className }: MobileNavigationProps) 
       </Button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background border-b shadow-lg z-50">
+        <div className="absolute top-full left-0 right-0 bg-white border-b shadow-lg z-50">
           <nav className="flex flex-col p-4">
-            {visibleItems.map((item) => (
-              <Link
-                key={item.id}
-                to={item.path}
-                className="py-2 px-4 text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {visibleItems.map((item) => {
+              const isStoreOrCommunity = item.label === "Store" || item.label === "MyCommunity"
+              return (
+                <Link
+                  key={item.id}
+                  to={item.path}
+                  className={`py-3 px-4 text-base font-medium transition-colors ${
+                    isStoreOrCommunity 
+                      ? "text-brand-green hover:text-brand-green/80 font-semibold" 
+                      : "text-gray-700 hover:text-primary"
+                  }`}
+                  style={{ fontFamily: 'Arial, sans-serif' }}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
           </nav>
         </div>
       )}

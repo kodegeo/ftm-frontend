@@ -1,28 +1,32 @@
 import { Button } from "../ui/button"
-import { Input } from "../ui/input"
 import { Facebook, Twitter, Instagram } from "lucide-react"
 import { Link } from "react-router-dom"
 
 export function Footer() {
   return (
     <footer className="bg-brand-green text-white">
-      {/* Newsletter section */}
+      {/* CTA section */}
       <section className="py-12 px-4 border-b border-white/20">
         <div className="container mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
-            SUBSCRIBE TO YOUR NEWSLETTER AND GET $10 DISCOUNT
+          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
+            Join Us!
           </h3>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1"
-              style={{ fontFamily: 'Arial, sans-serif' }}
-            />
-            <Button className="bg-white text-brand-green hover:bg-gray-100" style={{ fontFamily: 'Arial, sans-serif' }}>
-              Subscribe
-            </Button>
-          </div>
+          <p className="text-lg mb-6 max-w-2xl mx-auto text-white/90" style={{ fontFamily: 'Arial, sans-serif' }}>
+            Help us expand nationwide to eradicate food deserts impacting 19 million Americans and costing $190 Billion in healthcare costs.
+          </p>
+          <Button
+            asChild
+            className="bg-white text-brand-green hover:bg-gray-100 px-8 py-6 text-base font-semibold"
+            style={{ fontFamily: 'Arial, sans-serif' }}
+          >
+            <a 
+              href="https://form.jotform.com/250625568738165"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tell Us How You Can Support
+            </a>
+          </Button>
         </div>
       </section>
 
@@ -52,15 +56,15 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Column 1 */}
             <div>
-              <h4 className="font-bold mb-4 font-cooper text-lg">Family Tree</h4>
+              <h4 className="font-bold mb-4 font-cooper text-lg">Family Tree Food Market</h4>
               <p className="text-sm text-white/80 mb-4" style={{ fontFamily: 'Arial, sans-serif' }}>
-                Your Online Foods & Grocery
+                The Hill's Online Foods & Grocery
               </p>
               <p className="text-sm text-white/80 mb-2" style={{ fontFamily: 'Arial, sans-serif' }}>
-                (000) 000-0000
+                info@familytreemarket.com
               </p>
               <p className="text-sm text-white/80" style={{ fontFamily: 'Arial, sans-serif' }}>
-                123 Main Street, City, State 12345
+                1850 Centre Avenue, Pittsburgh, PA 15219
               </p>
             </div>
 
@@ -93,16 +97,20 @@ export function Footer() {
 
             {/* Column 4 */}
             <div>
-              <h4 className="font-bold mb-4 font-cooper">Family Tree Market</h4>
+              <h4 className="font-bold mb-4 font-cooper">Family Tree Food Market</h4>
               <div className="mb-4">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="mb-2"
+                <Button
+                  asChild
+                  className="w-full bg-white text-brand-green hover:bg-gray-100 mb-4"
                   style={{ fontFamily: 'Arial, sans-serif' }}
-                />
-                <Button className="w-full bg-white text-brand-green hover:bg-gray-100" style={{ fontFamily: 'Arial, sans-serif' }}>
-                  Subscribe
+                >
+                  <a 
+                    href="https://form.jotform.com/250625568738165"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Join Us
+                  </a>
                 </Button>
               </div>
               <div className="flex gap-4">

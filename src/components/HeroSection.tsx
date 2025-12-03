@@ -28,7 +28,10 @@ export function HeroSection({ title, subtitle, image, children }: HeroSectionPro
           {/* Brand Name */}
           <h1
             className="text-3xl md:text-4xl lg:text-5xl font-cooper leading-tight mb-4"
-            style={{ color: '#afe899' }}
+            style={{ 
+              color: '#afe899',
+              fontFamily: "'Cooper Black', serif"
+            }}
           >
             <span className="block">FAMILY TREE</span>
             <span className="block">FOOD MARKET</span>
